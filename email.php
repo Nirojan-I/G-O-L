@@ -31,7 +31,7 @@ while($row = mysqli_fetch_assoc($result))
 	$headers .= "MIME-Version: 1.0" . "\r\n";
 	$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 	if(mail($to,$subject,$message,$headers)){
-		echo "mail sent.";}
+		echo "Mail is sent. check your Gmail.";}
 	else {echo "No";}
 }
 ?>
